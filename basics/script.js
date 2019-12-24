@@ -84,6 +84,7 @@ console.log(typeof z);
 * operator precedence
 */
 
+/*
 var now = 2019;
 var yearVaibhav = 1997;
 var yearPratiksha = 1999;
@@ -108,12 +109,26 @@ x = 5;
 x += 2;
 x++;
 console.log(x);
+*/
 
 
+var BMIMark,massMark,heightMark;
+var BMIJohn,massJohn,heightJohn;
 
+massMark = prompt('Enter the mass of Marks');
+heightMark = prompt('Enter the height of Mark');
 
+BMIMark = massMark / (heightMark**2);
+console.log(BMIMark);
 
+massJohn = prompt('Enter the mass of John');
+heightJohn = prompt('Enter the height of John');
 
+BMIJohn = massJohn / (heightJohn**2);
+console.log(BMIJohn);
+
+var compare = BMIMark>BMIJohn;
+console.log('Is mark\'s BMI higher than John\'s ? '+compare);
 
 
 
