@@ -110,8 +110,8 @@ x += 2;
 x++;
 console.log(x);
 */
-
-
+// Coding Challenge 1
+/*
 var BMIMark,massMark,heightMark;
 var BMIJohn,massJohn,heightJohn;
 
@@ -129,14 +129,41 @@ console.log(BMIJohn);
 
 var compare = BMIMark>BMIJohn;
 console.log('Is mark\'s BMI higher than John\'s ? '+compare);
+*/
 
+/******************************************
+* If/Else Statements
+*/
 
+var firstName = 'Vaibhav';
+var civilStatus = 'Single';
 
+if (civilStatus === 'Married'){
+    console.log(firstName+' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)')
+}
 
+var isMarried = true;
+if (isMarried){
+    console.log(firstName+' is married!');
+} else {
+    console.log(firstName + ' will hopefully marry soon :)')
+}
 
+/***********************************
+ * Boolean logic
+ */
 
-
-
+var firstName = 'Vaibhav';
+var age = 16;
+if(age<13){
+    console.log(firstName + ' is a boy.')
+} else if (age >=13 && age<=20){
+    console.log(firstName + ' is a teenager.')
+}else{
+    console.log(firstName + ' is a man.')
+}
 
 
 
