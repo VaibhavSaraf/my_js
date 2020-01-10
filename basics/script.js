@@ -167,7 +167,7 @@ if(age<13){
  */
 
 /***********************************
- * Boolean logic
+ * Turnury operator
  */
 
 var firstName = 'John';
