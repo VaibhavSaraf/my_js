@@ -168,7 +168,7 @@ if(age<13){
 
 /***********************************
  * Turnury operator
- */
+ 
 
 var firstName = 'John';
 var age = 16;
@@ -177,17 +177,171 @@ age >= 18 ? console.log(firstName + ' drinks beer.') : console.log(firstName + '
 var drink = age >= 18 ? 'beer' : 'juice';
 console.log(drink);
 
+// Switch statement
+var job = prompt('what is your job?');
+switch(job){
+    case 'teacher':
+        console.log('its teacher');
+        break;
+    case 'driver':
+        console.log('its driver');
+        break;
+    case 'designer':
+        console.log('its designer');
+        break;
+    default:
+        console.log('its default');
+}
+*/
+
+/************************
+ * Truthy and falsy values and equality operators
+ */
+
+//falsy values : undefined, null, 0, '',NaN
+
+/* truthy values: NOT falsy values
+***********************************
+
+var height=23;
+if(height || height === 0){
+    console.log('variable is defined');
+} else {
+    console.log('variable has NOT been defined');
+}
+*/
+
+//  Equality operators
+/*
+if(height == '23'){
+    console.log('The == operator does type coercion!');
+}
+*/
+
+/*********************************
+ * Functions
+ 
+
+function calculateAge(birthYear){
+    return 2020 - birthYear;
+}
+console.log(calculateAge(1998));
+
+function yearsUntilRetirement(year, firstName){
+    var age = calculateAge(year);
+    var retirement = 65 - age;
+
+    if(retirement>0){
+        console.log(firstName + ' retires in '+ retirement+ ' years.');
+    } else{
+        console.log(firstName + ' is already retired.')
+    }
+    
+}
+
+yearsUntilRetirement(1997,'Vaibhav');
+yearsUntilRetirement(1951,'Pratiksha');
+*/
+
+/*********************
+ * Function Statements and Expression
+ 
+//Function declaration
+
+//Function Expression
+var whatDoYouDo = function (job, firstName){
+    switch(job) {
+        case 'teacher' : 
+            return firstName + ' teaches kids how to code';
+        case 'driver' :
+            return firstName + ' drives uber';
+        case 'designer' :
+            return firstName + ' designs websites';
+        default :
+            return firstName + ' does nothing!!!';
+    }
+}
+console.log(whatDoYouDo('teacher', 'Vaibhav'));
+*/
+
+/**********************************************
+ * Arrays
+
+var names = ['Vaibhav', 'Pratiksha', 'Pranav'];
+var years = new Array(1990,1969,1948);
+names[2] = 'Yash' ;
+names[names.length]='Sanam'
+console.log(names);
+
+// Different data types
+
+var saraf = ['Vaibhav','Smith',1998,'teacher',true];
+
+saraf.push('blue');
+console.log(saraf);
+saraf.unshift('Mr.');
+console.log(saraf);
+
+saraf.pop();
+console.log(saraf);
+saraf.pop();
+saraf.pop();
+console.log(saraf);
+var saraf = ['Vaibhav','Smith',1998,'teacher',true];
+console.log(saraf);
+saraf.shift();
+console.log(saraf);
+var saraf = ['Vaibhav','Smith',1998,'teacher',true];
+console.log(saraf.indexOf(23));
+var isDesigner=saraf.indexOf('designer') === -1 ? 'Vaibhav is NOT designer' : 'Vaibhav is designer';
+console.log(isDesigner);
+*/
+
+/******************************************************
+ * Objects and properties
 
 
+var myInfo = {
+    firstName: 'Vaibhav',
+    lastName: 'Saraf',
+    birthYear: 1997,
+    family: ['Vaishanvi','Pinu didi','Rucha','Raj'],
+    job: 'student',
+    isSingle: true
+};
 
+console.log(myInfo.firstName);
+console.log(myInfo['lastName']);
+var x = 'birthYear';
+console.log(myInfo[x]);
 
+myInfo.job = 'data scientist';
+myInfo['isSingle'] = false;
+console.log(myInfo);
 
+var vaishu = new Object();
+vaishu.firstName = 'Vaishanvi';
+vaishu.Maths = 98;
+console.log(vaishu);
+ */
 
+/******************************************************
+ * Objects and methods
+ */
 
+var myInfo = {
+    firstName: 'Vaibhav',
+    lastName: 'Saraf',
+    birthYear: 1997,
+    family: ['Vaishanvi','Pinu didi','Rucha','Raj'],
+    job: 'student',
+    isSingle: true,
+    calculateAge: function(birthYear){
+        return 2020 - this.birthYear;
+    }
+};
 
-
-
-
+console.log(myInfo.calculateAge());
 
 
 
