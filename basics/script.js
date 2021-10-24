@@ -327,7 +327,7 @@ console.log(vaishu);
 
 /******************************************************
  * Objects and methods
- */
+ 
 
 var myInfo = {
     firstName: 'Vaibhav',
@@ -342,13 +342,40 @@ var myInfo = {
 };
 
 console.log(myInfo.calculateAge());
+*/
 
 
+/******************************************************
+ * Loops and Iteration
+ */
 
+// console.log('Loops and Iteration');
 
+/**
+ * for loop
 
+ var saraf = ['Vaibhav','Smith',1998,'teacher',true];
+ for(var i = 0; i<saraf.length;i++){
+     console.log(saraf[i]);
+ }
+*/
 
+/**
+ * While loop
 
+var i=0;
+while(i<saraf.length){
+    console.log(saraf[i]);
+     i++;
+}
+*/
+/*
+var saraf = ['Vaibhav','Smith',1998,'teacher',true,'blue'];
+for(var i = 0;i<saraf.length;i++) {
+    if (typeof saraf[i]!=='string') continue ;
+    console.log(saraf[i]);
+}
+*/
 
 
 
